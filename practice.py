@@ -34,3 +34,18 @@ list = [3, 1, 4, 1, 5, 9]
 print(sorted(list))
 print(sum(list))
 print(len(list))
+
+# 課題5:2つの数を受け取って「大きい方の数」を返す関数 max_number(a, b) を作ってみよう。
+
+def max_number(a, b):
+    return max(a, b) #大きい値を返す関数
+
+num1 = float(input("１つめの数字を入力してね:"))
+num2 = float(input("２つめの数字を入力してね:"))
+
+print(max_number(num1, num2))
+
+#リストver
+
+numbers = [3, 7, 2, 10]
+print(max(numbers))
