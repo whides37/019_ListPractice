@@ -23,4 +23,14 @@ elif age > 100:
 # 課題3:1〜10 の数字を順番に表示するプログラムを書こう。
 
 for i in range(1, 11):
-    print(i)
+    # print(i)　#改行あり、カンマなし
+    print(i, end=",")#改行なし、カンマ区切り
+    # print(",".join(str(i) for i in range(1, 11))) #改行なし、カンマ区切り、最後のカンマなし
+    
+# 課題4:リスト操作。[3, 1, 4, 1, 5, 9] というリストの昇順、合計値、要素数を求めるプログラムを書こう。
+
+list = [3, 1, 4, 1, 5, 9]
+
+print(sorted(list))
+print(sum(list))
+print(len(list))
