@@ -52,14 +52,21 @@ print(max(numbers))
 
 # 課題6:文字列操作。ユーザーが入力した文字列を「全部大文字にする」「文字数を数える」「逆順にする」
 
-def to_upper(word: str) -> str:
+# 型ヒント（type hint） と呼ばれる書き方。関数が「どんな値を受け取り、どんな値を返すか」を“人間に”分かりやすく示す。
+# def to_upper(word: str) -> str:
+#     return word.upper()
+
+def to_upper(word):
     return word.upper()
 
-def count_length(word: str) -> int:
+def count_length(word):
     return len(word)
 
-def reverse_string(word: str) -> str:
-    return word[::-1]
+def reverse_string(word):
+    return word[::-1] #[start : stop : step]。✨ [::-1] は「全部を、逆向きにたどる」
+
+# "".join(reversed(word))と同じ意味。
+
 
 word1 = str(input("大文字にしたい文字を入力してね:"))
 print(to_upper(word1))
