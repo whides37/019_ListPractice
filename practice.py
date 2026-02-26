@@ -49,3 +49,25 @@ print(max_number(num1, num2))
 
 numbers = [3, 7, 2, 10]
 print(max(numbers))
+
+# 課題6:文字列操作。ユーザーが入力した文字列を「全部大文字にする」「文字数を数える」「逆順にする」
+
+def to_upper(word: str) -> str:
+    return word.upper()
+
+def count_length(word: str) -> int:
+    return len(word)
+
+def reverse_string(word: str) -> str:
+    return word[::-1]
+
+word1 = str(input("大文字にしたい文字を入力してね:"))
+print(to_upper(word1))
+
+word2 = str(input("文字数を数えたい文字列を入力してね:"))
+print(count_length(word2))
+
+word3 = input("並びを逆にしたい文字列を入力してね:")
+print(reverse_string(word3))
+
+
